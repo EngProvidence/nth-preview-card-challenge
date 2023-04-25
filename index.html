@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-preview-card-component</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+h4{
+    color: hsl(0, 0%, 78%);
+}
+.main{width: 25%;}
+
+
+
+@media only screen and (max-width:449px) {
+    .main{width: 99%; font-size: small;}  
+}
+
+@media screen and (min-width:450px) and (max-width:600px) {
+    .main{width: 75%;}  
+}
+@media screen and (min-width:601px) and (max-width:800px) {
+    .main{width: 65%;}  
+}
+@media screen and (min-width:801px) and (max-width:1000px) {
+    .main{width: 50%;}  
+}
+@media screen and (min-width:1001px) and (max-width:1200px) {
+    .main{width: 40%;}  
+}
+#view{width: 50px;
+ position:absolute;
+ left: 45%;
+ bottom:350px;
+ z-index:-1;
+}
+
+#view:hover{
+    z-index: 1;
+}
+
+h4:hover,span:hover{
+    color: hsl(178, 100%, 50%)
+}
+.card-image:hover{
+    opacity:0.4 ;
+}
+span{
+    color: hsl(0, 0%, 78%);
+}
+#avatar{border: 3px solid hsl(0, 0%, 100%);
+border-radius: 50%;}
+
+    </style>
+</head>
+<body>
+    <div class="p-5 mx-auto" style="background:  hsl(217, 54%, 11%);">
+        <div class="card p-4 main mx-auto" style="background-color: hsl(216, 50%, 16%); color:hsl(215, 51%, 70%) ;">
+<div style="background-color: cyan;" class="rounded-4" >
+<img src="images/image-equilibrium.jpg"
+ class="card-image rounded-4" alt="card-img" width="100%" srcset="">
+ <img src="images/icon-view.svg" alt="view"  id="view">
+</div>
+ <div class="card-title"> <h4> Equilibrium #3429</h4></div>
+
+<div class="card-text">
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+</div>
+<div class="row">
+    <div class="col-6">
+        <h5 style="color: hsl(178, 100%, 50%);"> <img src="images/icon-ethereum.svg" alt="entereum" > 0.041 ETH </h5>
+    </div>
+    <div class="col-6">
+        <h6><img src="images/icon-clock.svg" alt="clock"> 3 days left </h6>
+    </div>
+</div>
+
+<hr>
+<div class="row">
+    <div class="col-3">
+        <img src="images/image-avatar.png" id="avatar" width="50px" alt="avatar">
+    </div>
+    <div class="col-9">
+     <p class="mt-3">Creation of <span >Jules Wyvern </span> </p> 
+    </div>
+</div>
+
+        </div>
+    </div><br>
+<div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io/design/desktop-preview.jpg" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://www.frontendmentor.io/profile/engprovidence/">Engineer Providence</a>.
+          </div>
+</body>
+</html>
